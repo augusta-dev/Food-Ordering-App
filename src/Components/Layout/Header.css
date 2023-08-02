@@ -1,0 +1,8 @@
+#background{
+    background-image: url("../../Assets/background2.jpg");
+    background-size: cover;
+    background-repeat: none;
+}
+#gradient-overlay{
+    background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 100%);
+}
