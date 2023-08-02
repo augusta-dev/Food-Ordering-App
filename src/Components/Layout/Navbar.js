@@ -24,10 +24,10 @@ const NavBar = () => {
 				<NavbarContent>
 					<NavbarMenuToggle
 						aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-						className="sm:hidden"
+						className="lg:hidden"
 					/>
 					<NavbarBrand>
-						<p className="font-bold text-inherit">ACME</p>
+						<p className="font-bold text-inherit text-white">ACME</p>
 					</NavbarBrand>
 				</NavbarContent>
 
