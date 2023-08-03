@@ -20,14 +20,12 @@ const NavBar = () => {
 	const menuItems = ["Previous Orders", "Cart"];
 	return (
 		<>
-			<Navbar onMenuOpenChange={setIsMenuOpen}>
-				<NavbarContent>
-					<NavbarMenuToggle
-						aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-						className="lg:hidden"
-					/>
+			<Navbar onMenuOpenChange={setIsMenuOpen} className="bg-transparent" isBlurred="false">
+				<NavbarContent justify="start">
 					<NavbarBrand>
-						<p className="font-bold text-inherit text-white">ACME</p>
+						<p className="font-bold text-white">
+							ACME
+						</p>
 					</NavbarBrand>
 				</NavbarContent>
 
@@ -44,7 +42,7 @@ const NavBar = () => {
 							Previous Orders
 						</Link>
 					</NavbarItem>
-                    <NavbarItem>
+					<NavbarItem>
 						<Link
 							href="#"
 							aria-current="page"
@@ -67,26 +65,7 @@ const NavBar = () => {
 						className="w-6 h-auto"
 					></Image>
 				</NavbarContent>
-				<NavbarMenu>
-					{menuItems.map((item, index) => (
-						<NavbarMenuItem key={`${item}-${index}`}>
-							<Link
-								color={
-									index === 2
-										? "primary"
-										: index === menuItems.length - 1
-										? "danger"
-										: "foreground"
-								}
-								className="w-full"
-								href="#"
-								size="lg"
-							>
-								{item}
-							</Link>
-						</NavbarMenuItem>
-					))}
-				</NavbarMenu>
+				
 			</Navbar>
 		</>
 	);

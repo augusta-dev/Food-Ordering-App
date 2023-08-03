@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+    @font-face {
+        font-family: Rasa;
+        src: url('/src/Assets/Fonts/Rasa/Rasa-VariableFont_wght.ttf');
+    }
+    @font-face {
+        font-family: 'Cormorant Garamond';
+        src: url('/src/Assets/Cormorant_Garamond/CormorantGaramond-Regular.ttf');
+    }
+    @font-face {
+        font-family: Princess Sofia;
+        src: url('/src/Assets/Fonts/Princess_Sofia/PrincessSofia-Regular.ttf');
+    }
+}
