@@ -13,6 +13,7 @@ import {
 // import {AcmeLogo} from "./AcmeLogo.jsx";
 import { useState } from "react";
 import cart from "../../Assets/shopping-cart (3).png";
+import foodTray from "../../Assets/food-tray.png"
 
 const NavBar = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,15 +21,16 @@ const NavBar = () => {
 	const menuItems = ["Previous Orders", "Cart"];
 	return (
 		<>
-			<Navbar onMenuOpenChange={setIsMenuOpen} className="bg-transparent" isBlurred="false">
+			<Navbar className="bg-transparent" isBlurred="false">
 				<NavbarContent justify="start">
 					<NavbarBrand>
-						<p className="font-bold text-white">
-							ACME
-						</p>
+						<Image src={foodTray} className="w-8 h-8"></Image>
+						<h1 className="text-white font-cormorant">
+							hmck
+						</h1>
 					</NavbarBrand>
 				</NavbarContent>
-
+<h1 className="font-cormorant">Yes</h1>
 				<NavbarContent
 					justify="end"
 					className="flex flex-wrap"

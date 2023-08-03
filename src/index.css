@@ -4,7 +4,7 @@
 
 @layer base{
     @font-face {
-        font-family: Rasa;
+        font-family: "Rasa";
         src: url('/src/Assets/Fonts/Rasa/Rasa-VariableFont_wght.ttf');
     }
     @font-face {
@@ -12,7 +12,7 @@
         src: url('/src/Assets/Fonts/Cormorant_Garamond/CormorantGaramond-Regular.ttf');
     }
     @font-face {
-        font-family: Princess Sofia;
+        font-family: "Princess Sofia";
         src: url('/src/Assets/Fonts/Princess_Sofia/PrincessSofia-Regular.ttf');
     }
 }
