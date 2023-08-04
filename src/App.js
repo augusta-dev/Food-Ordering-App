@@ -1,11 +1,11 @@
 import "./App.css";
-import Header from "./Components/Layout/Header";
+import LandingPage from "./Components/Layout/LandingPage";
 import { NextUIProvider } from "@nextui-org/react";
 
 function App() {
 	return (
 		<NextUIProvider>
-			<Header />
+			<LandingPage />
 		</NextUIProvider>
 	);
 }
