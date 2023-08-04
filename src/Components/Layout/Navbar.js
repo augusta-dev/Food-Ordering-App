@@ -21,25 +21,24 @@ const NavBar = () => {
 	const menuItems = ["Previous Orders", "Cart"];
 	return (
 		<>
-			<Navbar className="bg-transparent" isBlurred="false">
+			<Navbar className="bg-transparent pt-7" isBlurred="false">
 				<NavbarContent justify="start">
 					<NavbarBrand>
-						<Image src={foodTray} className="w-8 h-8"></Image>
-						<h1 className="text-white font-cormorant">
+						<Image src={foodTray} className="w-12 h-12 -mt-3"></Image>
+						<h1 className="text-white font-sofia text-4xl pl-5">
 							hmck
 						</h1>
 					</NavbarBrand>
 				</NavbarContent>
-<h1 className="font-cormorant">Yes</h1>
 				<NavbarContent
 					justify="end"
-					className="flex flex-wrap"
+					className="flex flex-wrap font-rasa"
 				>
 					<NavbarItem>
 						<Link
 							href="#"
 							aria-current="page"
-							className="text-white"
+							className="text-white text-2xl"
 						>
 							Previous Orders
 						</Link>
@@ -48,7 +47,7 @@ const NavBar = () => {
 						<Link
 							href="#"
 							aria-current="page"
-							className="text-white"
+							className="text-white text-2xl"
 						>
 							|
 						</Link>
@@ -57,7 +56,7 @@ const NavBar = () => {
 						<Link
 							href="#"
 							aria-current="page"
-							className="text-white"
+							className="text-white text-2xl"
 						>
 							Cart
 						</Link>
