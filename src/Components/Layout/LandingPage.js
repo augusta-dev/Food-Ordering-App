@@ -8,7 +8,7 @@ const LandingPage = (props) => {
 		<>
 			<div
 				id="background"
-				className="w-screen h-screen bg-center flex"
+				className="w-screen h-screen bg-center bg-fixed flex"
 			>
 				<div
 					className="w-screen h-screen"

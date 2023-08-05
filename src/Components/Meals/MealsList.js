@@ -19,8 +19,9 @@ const MealsList = () => {
 		},
 	];
 	return (
-		<div className="w-4/5 bg-neutral-100 rounded-3xl">
-			{Meals.map((meal) => (
+		<div className="w-full bg-neutral-100 rounded-3xl">
+			{Meals.map((meal, index) => (
+				
 				<div>
 					<IndividualMeals
 						name={meal.name}
@@ -28,7 +29,9 @@ const MealsList = () => {
 						price={meal.price}
                         className="w-full"
 					/>
-					<div className="w-full h-px bg-black" />
+					{ index !== Meals.length - 1 ? (<div className="w-full h-px bg-black" />) : null }
+						
+						
 				</div>
 			))}
 		</div>

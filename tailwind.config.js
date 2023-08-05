@@ -10,6 +10,7 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				cormorant: "Cormorant Garamond",
+				cormorantItalic: "Cormorant Italic",
 				rasa: "Rasa",
 				sofia: "Princess Sofia",
 			},

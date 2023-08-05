@@ -12,6 +12,10 @@
         src: url('/src/Assets/Fonts/Cormorant_Garamond/CormorantGaramond-Regular.ttf');
     }
     @font-face {
+        font-family: 'Cormorant Italic';
+        src: url('/src/Assets/Fonts/Cormorant_Garamond/CormorantGaramond-LightItalic.ttf');
+    }
+    @font-face {
         font-family: "Princess Sofia";
         src: url('/src/Assets/Fonts/Princess_Sofia/PrincessSofia-Regular.ttf');
     }
