@@ -8,6 +8,10 @@
         src: url('/src/Assets/Fonts/Rasa/Rasa-VariableFont_wght.ttf');
     }
     @font-face {
+        font-family: "Rasa Light";
+        src: url('/src/Assets/Fonts/Rasa/static/Rasa-Light.ttf');
+    }
+    @font-face {
         font-family: 'Cormorant Garamond';
         src: url('/src/Assets/Fonts/Cormorant_Garamond/CormorantGaramond-Regular.ttf');
     }

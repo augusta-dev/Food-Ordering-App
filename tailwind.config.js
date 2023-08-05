@@ -12,6 +12,7 @@ module.exports = {
 				cormorant: "Cormorant Garamond",
 				cormorantItalic: "Cormorant Italic",
 				rasa: "Rasa",
+				rasaLight: "Rasa Light",
 				sofia: "Princess Sofia",
 			},
 		},
