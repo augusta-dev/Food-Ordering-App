@@ -7,9 +7,10 @@ import CartLayout from "./Components/Cart/CartLayout";
 function App() {
 	return (
 		<NextUIProvider>
+			<CartLayout></CartLayout>
 			<LandingPage />
 			<MealsSummary />
-			<CartLayout />
+			{/* <CartLayout /> */}
 		</NextUIProvider>
 	);
 }

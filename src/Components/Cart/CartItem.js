@@ -1,6 +1,8 @@
 import { Button } from "@nextui-org/react";
 
 const CartItem = (props) => {
+	const price = `$${props.price.toFixed(2)}`
+
 	return (
 		<div
 			className={`${props.className} flex flex-wrap justify-between py-4`}
@@ -15,7 +17,7 @@ const CartItem = (props) => {
 					</h2>
 					<div className="flex flex-wrap justify-center items-center">
 						<p className="text-red-500 text-4xl font-light font-rasa leading-10">
-							${props.price}
+							{price}
 						</p>
                         <input
 						type="number"

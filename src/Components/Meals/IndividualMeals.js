@@ -1,6 +1,8 @@
 import {Button} from "@nextui-org/react";
+import MealItemForm from "./MealItemForm";
 
 const IndividualMeals = (props) => {
+	const price = `$${props.price.toFixed(2)}`
 	return (
 		<div
 			className={`${props.className} flex flex-wrap justify-between px-9 py-4`}
@@ -16,14 +18,15 @@ const IndividualMeals = (props) => {
 					{props.ingredients}
 				</p>
 				<p className="text-red-500 text-4xl font-light font-rasa leading-10">
-					${props.price}
+					{price}
 				</p>
 			</div>
 			<div
 				justify="end"
 				className="flex flex-col justify-center items-center w-48"
 			>
-				<div className="grid grid-flow-col align-center gap-6 ">
+				<MealItemForm></MealItemForm>
+				{/* <div className="grid grid-flow-col align-center gap-6 ">
 					<p className="w-1/2 font-rasaLight text-4xl">Amount</p>
 					<input
 						type="number"
@@ -32,7 +35,7 @@ const IndividualMeals = (props) => {
 				</div>
 				<div className="w-full">
 					<Button radius="full" type="" className="w-full bg-red-400 text-3xl font-rasa pt-1">+ Add</Button>
-				</div>
+				</div> */}
 			</div>
 		</div>
 	);
