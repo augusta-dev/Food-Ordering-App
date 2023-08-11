@@ -4,9 +4,16 @@ import CartContext from "../Store/CartContext";
 import MealItemForm from "./MealItemForm";
 
 const IndividualMeals = (props) => {
+	const cartCtx = useContext(CartContext);
 	const price = `$${props.price.toFixed(2)}`;
 	const addToCartHandler = (amount) => {
-
+		console.log(amount);
+		cartCtx.addItem({
+			id: props.id,
+			name: props.name,
+			amount: amount,
+			price: props.price,
+		})
 	};
 	return (
 		<div

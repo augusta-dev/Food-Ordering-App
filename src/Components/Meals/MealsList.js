@@ -32,6 +32,7 @@ const MealsList = () => {
 						price={meal.price}
                         className="w-full"
 						key={meal.id}
+						id={meal.id}
 					/>
 					{ index !== Meals.length - 1 ? (<div className="w-full h-px bg-black" />) : null }
 						
