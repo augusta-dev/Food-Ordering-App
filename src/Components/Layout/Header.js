@@ -8,7 +8,7 @@ import {
 } from "@nextui-org/react";
 import foodTray from "../../Assets/food-tray.png";
 import CartDetails from "../Cart/CartDetails";
-const Header = () => {
+const Header = (props) => {
 	return (
 		<>
 			<Navbar
@@ -48,17 +48,14 @@ const Header = () => {
 							|
 						</Link>
 					</NavbarItem>
-					<NavbarItem>
-						<Link
-							href="#"
-							aria-current="page"
-							className="text-white text-2xl"
-						>
-							Cart
-						</Link>
-					</NavbarItem>
-					<NavbarItem>
-						<CartDetails className="flex flex-wrap gap-4"></CartDetails>
+
+					<NavbarItem
+						className="flex flex-wrap w-auto gap-4 cursor-pointer"
+						onClick={props.onShowCart}
+					>
+						<p className="text-white text-2xl">Cart</p>
+
+						<CartDetails className="flex flex-wrap gap-4 mt-[5px]"></CartDetails>
 					</NavbarItem>
 				</NavbarContent>
 			</Navbar>

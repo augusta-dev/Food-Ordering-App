@@ -11,7 +11,7 @@ const CartLayout = (props) => {
 		{ name: "Sushi", price: 22.99, amount: 2, id: 4 },
 	];
 	return (
-		<Modal>
+		<Modal onClose={props.onClose}>
 			<Heading heading={"Cart"}>
 				<div className="w-full flex flex-col align-middle justify-center px-20 pb-10">
 					{CartItems.map((cartItem, index) => (
@@ -40,6 +40,7 @@ const CartLayout = (props) => {
 						className="w-full border-red-400 text-red-400 text-2xl font-rasa"
 						variant="ghost"
 						color="red"
+						onClick={props.onClose}
 					>
 						Close
 					</Button>

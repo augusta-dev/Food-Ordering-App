@@ -14,7 +14,7 @@ const LandingPage = (props) => {
 					className="w-screen h-screen"
 					id="gradient-overlay"
 				>
-					<Header />
+					<Header onShowCart={props.onShowCart} />
 					<Title className="h-full -mt-[5.75rem] align-middle justify-center w-full flex flex-wrap"/>
 				</div>
 			</div>
