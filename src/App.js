@@ -4,25 +4,27 @@ import MealsSummary from "./Components/Meals/MealsSummary";
 import { NextUIProvider } from "@nextui-org/react";
 import CartLayout from "./Components/Cart/CartLayout";
 import { useState } from "react";
+import CartProvider from "./Components/Store/CartProvider";
 
 function App() {
 	const [cartIsShown, setCartIsShown] = useState(false);
-	const showCartHandler = () => {	
+	const showCartHandler = () => {
 		setCartIsShown(true);
-	}
-	const hideCartHandler = () => {	
+	};
+	const hideCartHandler = () => {
 		setCartIsShown(false);
-	}
+	};
 	return (
 		<NextUIProvider>
-			{cartIsShown && <CartLayout onClose={hideCartHandler} />}
-			<main>
-				<LandingPage onShowCart={showCartHandler} />
-				<section>
-					<MealsSummary />
-				</section>
-			</main>
-			{/* <CartLayout /> */}
+			<CartProvider>
+				{cartIsShown && <CartLayout onClose={hideCartHandler} />}
+				<main>
+					<LandingPage onShowCart={showCartHandler} />
+					<section>
+						<MealsSummary />
+					</section>
+				</main>
+			</CartProvider>
 		</NextUIProvider>
 	);
 }

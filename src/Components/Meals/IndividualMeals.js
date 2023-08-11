@@ -1,8 +1,13 @@
-import {Button} from "@nextui-org/react";
+import { Button } from "@nextui-org/react";
+import { useContext } from "react";
+import CartContext from "../Store/CartContext";
 import MealItemForm from "./MealItemForm";
 
 const IndividualMeals = (props) => {
-	const price = `$${props.price.toFixed(2)}`
+	const price = `$${props.price.toFixed(2)}`;
+	const addToCartHandler = (amount) => {
+
+	};
 	return (
 		<div
 			className={`${props.className} flex flex-wrap justify-between px-9 py-4`}
@@ -25,7 +30,7 @@ const IndividualMeals = (props) => {
 				justify="end"
 				className="flex flex-col justify-center items-center w-48"
 			>
-				<MealItemForm></MealItemForm>
+				<MealItemForm onAddToCart={addToCartHandler} />
 				{/* <div className="grid grid-flow-col align-center gap-6 ">
 					<p className="w-1/2 font-rasaLight text-4xl">Amount</p>
 					<input
