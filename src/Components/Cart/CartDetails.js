@@ -5,7 +5,7 @@ import CartContext from "../Store/CartContext";
 const CartDetails = (props) => {
 	const cartCtx = useContext(CartContext);
 	const noOfCartItems = cartCtx.items.reduce((curNum, item) => {
-		return curNum + item;
+		return curNum + item.amount;
 	}, 0);
 	return (
 		<div className={props.className}>

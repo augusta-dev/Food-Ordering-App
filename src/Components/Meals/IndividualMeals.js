@@ -6,14 +6,14 @@ import MealItemForm from "./MealItemForm";
 const IndividualMeals = (props) => {
 	const cartCtx = useContext(CartContext);
 	const price = `$${props.price.toFixed(2)}`;
-	const addToCartHandler = (amount) => {
-		console.log(amount);
+	const addItemHandler = (amount) => {
 		cartCtx.addItem({
 			id: props.id,
 			name: props.name,
 			amount: amount,
 			price: props.price,
 		})
+		console.log(cartCtx);
 	};
 	return (
 		<div
@@ -37,7 +37,7 @@ const IndividualMeals = (props) => {
 				justify="end"
 				className="flex flex-col justify-center items-center w-48"
 			>
-				<MealItemForm onAddToCart={addToCartHandler} />
+				<MealItemForm onAddToCart={addItemHandler} />
 				{/* <div className="grid grid-flow-col align-center gap-6 ">
 					<p className="w-1/2 font-rasaLight text-4xl">Amount</p>
 					<input

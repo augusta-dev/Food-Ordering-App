@@ -1,7 +1,7 @@
 import { Button } from "@nextui-org/react";
 
 const CartItem = (props) => {
-	const price = `$${props.price.toFixed(2)}`
+	const price = `$${props.price.toFixed(2)}`;
 
 	return (
 		<div
@@ -19,14 +19,13 @@ const CartItem = (props) => {
 						<p className="text-red-500 text-4xl font-light font-rasa leading-10">
 							{price}
 						</p>
-                        <input
-						type="number"
-						className="border-2 border-black rounded-lg bg-transparent w-10 h-8 pl-2 ml-10 text-3xl font-rasa"
-						min={1}
-						max={10}
-						value={props.amount}
-					/>
-
+						<input
+							type="number"
+							className="border-2 border-black rounded-lg bg-transparent w-10 h-8 pl-2 ml-10 text-3xl font-rasa"
+							min={1}
+							max={10}
+							value={props.amount}
+						/>
 					</div>
 				</div>
 			</div>
@@ -39,6 +38,7 @@ const CartItem = (props) => {
 					variant="ghost"
 					color="black"
 					className="border-black text-black font-bold font-rasa text-3xl"
+					onClick={props.onRemove}
 				>
 					-
 				</Button>
@@ -47,6 +47,7 @@ const CartItem = (props) => {
 					variant="ghost"
 					color="black"
 					className="border-black text-black font-bold font-rasa text-3xl"
+					onClick={props.onAdd}
 				>
 					+
 				</Button>

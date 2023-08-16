@@ -1,20 +1,22 @@
+import { useContext } from "react";
+import { Button } from "@nextui-org/react";
 import Heading from "../UI/Heading";
 import Modal from "../UI/Modal";
 import CartItem from "./CartItem";
-import { Button } from "@nextui-org/react";
+import CartContext from "../Store/CartContext";
 
 const CartLayout = (props) => {
-	const CartItems = [
-		{ name: "Sushi", price: 22.99, amount: 4, id: 1 },
-		{ name: "Sushi", price: 22.99, amount: 2, id: 2 },
-		{ name: "Sushi", price: 22.99, amount: 4, id: 3 },
-		{ name: "Sushi", price: 22.99, amount: 2, id: 4 },
-	];
+	const cartCtx = useContext(CartContext);
+	const totalAmount = `$${cartCtx.totalAmount.toFixed(2)}`;
+	const hasItems = cartCtx.items.length > 0;
+
+	const removeItemHandler = (id) => {};
+	const addItemHandler = (item) => {};
 	return (
 		<Modal onClose={props.onClose}>
 			<Heading heading={"Cart"}>
 				<div className="w-full flex flex-col align-middle justify-center px-20 pb-10">
-					{CartItems.map((cartItem, index) => (
+					{cartCtx.items.map((cartItem, index) => (
 						<div>
 							<CartItem
 								name={cartItem.name}
@@ -22,19 +24,24 @@ const CartLayout = (props) => {
 								amount={cartItem.amount}
 								key={cartItem.id}
 								className="w-full"
+								onRemove={removeItemHandler}
+								onAdd={addItemHandler}
 							/>
-							{index !== CartItems.length - 1 ? (
+							{index !== cartCtx.length - 1 ? (
 								<div className="h-px bg-neutral-500 w-full" />
 							) : null}
 						</div>
 					))}
 					<div className="pt-4 pb-5 w-full flex flex-wrap justify-between font-rasa">
 						<h1 className="text-black text-5xl font-normal">
-							Total: <span className="text-red-400">$22.99</span>
+							Total:{" "}
+							<span className="text-red-400">{totalAmount}</span>
 						</h1>
-						<Button className="bg-red-400 w-32 text-2xl">
-							Order
-						</Button>
+						{hasItems && (
+							<Button className="bg-red-400 w-32 text-2xl">
+								Order
+							</Button>
+						)}
 					</div>
 					<Button
 						className="w-full border-red-400 text-red-400 text-2xl font-rasa"
