@@ -10,8 +10,12 @@ const CartLayout = (props) => {
 	const totalAmount = `$${cartCtx.totalAmount.toFixed(2)}`;
 	const hasItems = cartCtx.items.length > 0;
 
-	const removeItemHandler = (id) => {};
-	const addItemHandler = (item) => {};
+	const removeItemHandler = (id) => {
+		cartCtx.removeItem(id);
+	};
+	const addItemHandler = (item) => {
+		cartCtx.addItem({ ...item, amount: 1 });
+	};
 	return (
 		<Modal onClose={props.onClose}>
 			<Heading heading={"Cart"}>
@@ -23,9 +27,13 @@ const CartLayout = (props) => {
 								price={cartItem.price}
 								amount={cartItem.amount}
 								key={cartItem.id}
+								id={cartItem.id}
 								className="w-full"
-								onRemove={removeItemHandler}
-								onAdd={addItemHandler}
+								onRemove={removeItemHandler.bind(
+									null,
+									cartItem.id,
+								)}
+								onAdd={addItemHandler.bind(null, cartItem)}
 							/>
 							{index !== cartCtx.length - 1 ? (
 								<div className="h-px bg-neutral-500 w-full" />

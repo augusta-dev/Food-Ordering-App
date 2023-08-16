@@ -2,6 +2,7 @@ import { Button } from "@nextui-org/react";
 
 const CartItem = (props) => {
 	const price = `$${props.price.toFixed(2)}`;
+	
 
 	return (
 		<div
