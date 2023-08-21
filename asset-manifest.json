@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Food-Ordering-App/static/css/main.698b746b.css",
-    "main.js": "/Food-Ordering-App/static/js/main.730c5286.js",
-    "static/js/787.9643ecdb.chunk.js": "/Food-Ordering-App/static/js/787.9643ecdb.chunk.js",
-    "static/media/background2.jpg": "/Food-Ordering-App/static/media/background2.63d13467cc3aea772aab.jpg",
-    "static/media/CormorantGaramond-Regular.ttf": "/Food-Ordering-App/static/media/CormorantGaramond-Regular.4114a151797af532cace.ttf",
-    "static/media/Rasa-VariableFont_wght.ttf": "/Food-Ordering-App/static/media/Rasa-VariableFont_wght.41f6b887eca1d482a4bf.ttf",
-    "static/media/CormorantGaramond-LightItalic.ttf": "/Food-Ordering-App/static/media/CormorantGaramond-LightItalic.457de2fd20cf06e94e93.ttf",
-    "static/media/PrincessSofia-Regular.ttf": "/Food-Ordering-App/static/media/PrincessSofia-Regular.24ee19f9fb6115769bda.ttf",
-    "static/media/Rasa-Light.ttf": "/Food-Ordering-App/static/media/Rasa-Light.3e7a7e04ff577572e29f.ttf",
-    "static/media/food-tray.png": "/Food-Ordering-App/static/media/food-tray.fc2c038950d4c86e82e0.png",
-    "index.html": "/Food-Ordering-App/index.html",
-    "main.698b746b.css.map": "/Food-Ordering-App/static/css/main.698b746b.css.map",
-    "main.730c5286.js.map": "/Food-Ordering-App/static/js/main.730c5286.js.map",
-    "787.9643ecdb.chunk.js.map": "/Food-Ordering-App/static/js/787.9643ecdb.chunk.js.map"
+    "main.css": "/food-ordering-app/static/css/main.fac0a4c3.css",
+    "main.js": "/food-ordering-app/static/js/main.cd6cbd9e.js",
+    "static/js/787.9643ecdb.chunk.js": "/food-ordering-app/static/js/787.9643ecdb.chunk.js",
+    "static/media/background2.jpg": "/food-ordering-app/static/media/background2.63d13467cc3aea772aab.jpg",
+    "static/media/CormorantGaramond-Regular.ttf": "/food-ordering-app/static/media/CormorantGaramond-Regular.4114a151797af532cace.ttf",
+    "static/media/Rasa-VariableFont_wght.ttf": "/food-ordering-app/static/media/Rasa-VariableFont_wght.41f6b887eca1d482a4bf.ttf",
+    "static/media/CormorantGaramond-LightItalic.ttf": "/food-ordering-app/static/media/CormorantGaramond-LightItalic.457de2fd20cf06e94e93.ttf",
+    "static/media/PrincessSofia-Regular.ttf": "/food-ordering-app/static/media/PrincessSofia-Regular.24ee19f9fb6115769bda.ttf",
+    "static/media/Rasa-Light.ttf": "/food-ordering-app/static/media/Rasa-Light.3e7a7e04ff577572e29f.ttf",
+    "static/media/food-tray.png": "/food-ordering-app/static/media/food-tray.fc2c038950d4c86e82e0.png",
+    "index.html": "/food-ordering-app/index.html",
+    "main.fac0a4c3.css.map": "/food-ordering-app/static/css/main.fac0a4c3.css.map",
+    "main.cd6cbd9e.js.map": "/food-ordering-app/static/js/main.cd6cbd9e.js.map",
+    "787.9643ecdb.chunk.js.map": "/food-ordering-app/static/js/787.9643ecdb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.698b746b.css",
-    "static/js/main.730c5286.js"
+    "static/css/main.fac0a4c3.css",
+    "static/js/main.cd6cbd9e.js"
   ]
 }
