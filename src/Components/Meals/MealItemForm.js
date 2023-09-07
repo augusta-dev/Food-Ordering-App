@@ -19,13 +19,13 @@ const MealItemForm = (props) => {
 		props.onAddToCart(enteredAmountNumber);
 	};
 	return (
-		<form onSubmit={submitEventHandler}>
-			<div className="grid grid-flow-col align-center gap-6 ">
-				<label className="w-1/2 font-rasaLight text-4xl">Amount</label>
+		<form onSubmit={submitEventHandler} className="w-full px-5">
+			<div className="grid grid-flow-col align-center gap-6 w-fit">
+				<label className="w-1/2 font-rasaLight text-2xl">Amount</label>
 				<input
 					ref={amountInputRef}
 					type="number"
-					className="border-2 border-black rounded-lg bg-transparent w-14 h-8 pl-2 text-2xl font-rasa"
+					className="border-1 border-black rounded-lg bg-transparent w-10 h-6 mb-2 pl-2 text-xl font-rasa mt-1"
 					min={1}
 					defaultValue={1}
 					max={10}
@@ -35,7 +35,7 @@ const MealItemForm = (props) => {
 				<Button
 					radius="full"
 					type="submit"
-					className="w-full bg-red-400 text-3xl font-rasa pt-1" 
+					className="w-full bg-red-400 text-2xl font-rasa pt-1 h-7" 
 				>
 					+ Add
 				</Button>
